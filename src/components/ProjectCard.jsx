@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 const Card = styled.div`
   width: 330px;
-  height: 490px;
+  height: 270px;
   background-color: ${({ theme }) => theme.card};
   cursor: pointer;
   border-radius: 10px;
@@ -19,13 +19,6 @@ const Card = styled.div`
     box-shadow: 0 0 50px 4px rgba(0, 0, 0, 0.6);
     filter: brightness(1.1);
   }
-`;
-const Image = styled.img`
-  width: 100%;
-  height: 180px;
-  background-color: ${({ theme }) => theme.white};
-  border-radius: 10px;
-  box-shadow: 0 0 16px 2px rgba(0, 0, 0, 0.3);
 `;
 const Tags = styled.div`
   width: 100%;
@@ -82,20 +75,6 @@ const Description = styled.div`
   -webkit-box-orient: vertical;
   text-overflow: ellipsis;
 `;
-const Members = styled.div`
-  display: flex;
-  align-items: center;
-  padding-left: 10px;
-`;
-const Avatar = styled.img`
-  width: 38px;
-  height: 38px;
-  border-radius: 50%;
-  margin-left: -10px;
-  background-color: ${({ theme }) => theme.white};
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  border: 3px solid ${({ theme }) => theme.card};
-`;
 const Button = styled.a`
   color: ${({ theme }) => theme.primary};
   text-decoration: none;
@@ -106,22 +85,15 @@ const Button = styled.a`
 const ProjectCard = ({ project, setOpenModal }) => {
   return (
     <Card onClick={() => setOpenModal({ state: true, project: project })}>
-      <Image src={project.image} />
+      <Details>
+        <Title>{project.title}</Title>
+        <Description>{project.description}</Description>
+      </Details>
       <Tags>
         {project.tags?.map((tag, index) => (
           <Tag>{tag}</Tag>
         ))}
       </Tags>
-      <Details>
-        <Title>{project.title}</Title>
-        <Date>{project.date}</Date>
-        <Description>{project.description}</Description>
-      </Details>
-      <Members>
-        {project.member?.map((member) => (
-          <Avatar src={member.img} />
-        ))}
-      </Members>
     </Card>
   );
 };
