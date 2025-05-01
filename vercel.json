@@ -2,7 +2,10 @@
     "routes":[
         {
             "src":"/[^.]+",
-            "dest":"/"
+            "dest":"/",
+            "config": {
+                "outputDirectory": "dist"
+            }
         }
     ]
 }
