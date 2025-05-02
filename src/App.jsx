@@ -42,7 +42,7 @@ function App() {
   const [openModal, setOpenModal] = useState({ state: false, project: null });
   return (
     <ThemeProvider theme={Theme.darkTheme}>
-      <BrowserRouter basename="/Portfolio">
+      <BrowserRouter>
         <Navbar />
         <Body>
           <StarCanvas />
