@@ -282,7 +282,7 @@ export const Bio = {
     },
     {
       id: 4,
-      title: "Todo Web App",
+      title: "NewsMonkey",
       date: "Jun 2021",
       description:
         " NewsMonkey is a real-time news platform designed to keep users informed with the latest updates across categories like sports, science, technology, and more. With a clean and intuitive interface, NewsMonkey offers personalized browsing experiences, making it easy for users to stay connected to the topics they care about most.",
