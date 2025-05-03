@@ -102,7 +102,7 @@ const Footer = () => {
             <InstagramIcon />
           </SocialMediaIcon>
         </SocialMediaIcons>
-        <Copyright>&copy; 2024 Yash Kumar Bandhiye. All rights reserved.</Copyright>
+        <Copyright>&copy; 2025 Yash Kumar Bandhiye. All rights reserved.</Copyright>
       </FooterWrapper>
     </FooterContainer>
   );
