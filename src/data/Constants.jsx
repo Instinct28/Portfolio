@@ -10,7 +10,7 @@ export const Bio = {
       "I am a motivated and versatile individual, always eager to take on new challenges. With a passion for learning I am dedicated to delivering high-quality results. With a positive attitude and a growth mindset, I am ready to make a meaningful contribution and achieve great things.",
     github: "https://github.com/Instinct28",
     resume:
-      "https://drive.google.com/file/d/14mKSZHNgfRNPlDmWvgl0me-MX7TMoiFE/view?usp=sharing",
+      "https://drive.google.com/file/d/1wI1Eag0h--VGhGcTWc1J2uzIx9WaZ5w9/view?usp=sharing",
     linkedin: "https://www.linkedin.com/in/yash-kumar-bandhiye-9bb0a91a5/",
     insta: "https://www.instagram.com/instinct_warrior/",
   };
